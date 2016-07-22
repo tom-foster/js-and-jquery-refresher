@@ -1,5 +1,5 @@
 //string operators
-var greeting = 'Howdy';
+var greeting = 'Howdy ';
 var name = 'Tom';
 
 var welcomeMessage = greeting + name + '!';
