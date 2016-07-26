@@ -14,7 +14,7 @@ var elName = document.getElementById('hotelName');
 elName.textContent = hotel.name;
 
 var elPool = document.getElementById('pool');
-elPool.textContent = hotel.pool;
+elPool.className = hotel.pool;
 
 var elGym = document.getElementById('gym');
-elGym.textContent = hotel.gym;
+elGym.className = hotel.gym;
