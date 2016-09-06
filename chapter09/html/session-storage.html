@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>chapter09/session-storage</title>
+  <link rel="stylesheet" href="../css/chapter09.css">
+</head>
+<body>
+  <header>
+    <h1>The maker bus</h1>
+  </header>
+  <h2>What would you like to make?</h2>
+  <div class="third">
+    <img src="../images/toys1.jpg" alt="Circuit boards"/>
+  </div>
+  <div class="two-thirds">
+    <!--Apply php doesn't exist the form will still trigger on a refresh of the page  -->
+    <form action="apply.php" id="application">
+      <label for="username">Name</label>
+      <input type="text" id="username" />
+      <label for="answer">Answer</label>
+      <textarea name="answer" id="answer"></textarea>
+      <input type="submit" value="Save" />
+    </form>
+    <script src="../js/modernizr-custom.min.js"></script>
+    <script src="../js/session-storage.js"></script>
+  </div>
+</body>
+</html>
