@@ -3,7 +3,9 @@
 //tf 09/09/16
 
 jQuery(document).ready(function ($){
-  $('#arrival').datepicker();       //Turn input to jqui datepicker
+  $('#arrival').datepicker({
+    dateFormat: "DD d MM yy"
+  });       //Turn input to jqui datepicker
 
   var $amount = $('#amount');       //cache the price input
   var $range = $('#price-range');   //cache the <div> for the price range
