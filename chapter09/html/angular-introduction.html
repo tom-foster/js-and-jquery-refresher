@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+  <meta charset="UTF-8">
+  <title>chapter09/angular-introduction</title>
+  <link rel="stylesheet" href="../css/chapter09.css">
+  <script src="../js/angular.js"></script>
+</head>
+<body>
+  <header>
+    <h1>The maker bus</h1>
+  </header>
+  <div class="third">
+    <p class="welcome">Tell your friends to join us for an awesome day of tinkering with the Maker Bus...</p>
+
+    <form action="">
+      To:<br />
+      <input ng-model="name" type="text" /><br />
+      Message:<br />
+      <textarea ng-model="message"></textarea>
+      <input type="submit" value="send message">
+    </form>
+  </div>
+  <div class="two-thirds">
+    <div class="postcard">
+      <div>{{ name }}</div>
+      <p>{{ message }}</p>
+    </div>
+  </div>
+
+</body>
+</html>
