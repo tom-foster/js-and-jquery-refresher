@@ -1,5 +1,7 @@
 //The view and View model and data binding and scope in AngularJS
-// Demonstrating
+// Demonstrating the angular controller in 1.5.8
+//you'll need to run a local server
+//tf 12/09/16
 
 angular.module('angular-controller-example', [])
   .controller('BasketCtrl', ['$scope', function($scope) {
