@@ -6,7 +6,7 @@ function init() {
   //we want it to look
   var mapOptions = {
     zoom: 14,
-    center: new google.maps.LatLng(40.782710,-73.965310),
+    center: new google.maps.LatLng(52.292582,-1.5883776),
     mapTypeId: google.maps.MapTypeId.ROADMAP,
 
     panControl: false,

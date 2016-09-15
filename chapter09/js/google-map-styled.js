@@ -4,7 +4,7 @@
 var venueMap;
 function init () {
 
-  var pinLocation = new google.maps.LatLng(40.782710,-73.965310);
+  var pinLocation = new google.maps.LatLng(52.292582,-1.5883776);
 
   var mapOptions = {
     zoom: 15,
@@ -30,41 +30,41 @@ function init () {
     streetViewControl: false,
     overviewMapControl: false,
 
-    styles: [
+    styles: [     //styles property is an array of objects
       {
-        stylers: [
-          { hue: "#00ff6f"},
-          { saturation: -50 }
+        stylers: [      //stylers property holds array of objects
+          { hue: "#00ff6f"},  //overall map colours
+          { saturation: -50 } //overall map saturation
         ]
       }, {
-        featureType: "road",
-        elementType: "geometry",
+        featureType: "road",    //road features
+        elementType: "geometry", //their geometry (lines)
         stylers: [
-          { lightness: 100 },
-          { visibility: "simplified"}
+          { lightness: 100 }, //lightness of roads
+          { visibility: "simplified"} //level of road detail
         ]
       }, {
-        featureType: "transit",
-        elementType: "geometry",
+        featureType: "transit", //public transport features
+        elementType: "geometry", //their geometry (lines)
         stylers: [
-          { hue: "#ff6600"},
-          { saturation: +80 }
+          { hue: "#ff6600"},      //colour of public transport
+          { saturation: +80 }     //saturation of public transport
         ]
       }, {
-        featureType: "transit",
+        featureType: "transit", //public transport features
+        elementType: "labels", //their labels
+        stylers: [
+          { hue: "#ff0066"}, //label colour
+          { saturation: +80} //label saturation
+        ]
+      }, {
+        featureType: "poi", //points of interest
         elementType: "labels",
         stylers: [
-          { hue: "#ff0066"},
-          { saturation: +80}
+          { visibility : "off" } //turned off
         ]
       }, {
-        featureType: "poi",
-        elementType: "labels",
-        stylers: [
-          { visibility : "off" }
-        ]
-      }, {
-        featureType: "poi.park",
+        featureType: "poi.park", //points of interest park
         elementType: "labels",
         stylers: [
           { visibility: "on" }
@@ -87,17 +87,17 @@ function init () {
 
 var venueMap = new google.maps.Map(document.getElementById('map'), mapOptions);
 
-var startPosition = new google.maps.Marker({
-  position: pinLocation,
-  map: venueMap,
-  icon: "../images/go.png"
+var startPosition = new google.maps.Marker({ //create a new marker for the map
+  position: pinLocation, //set its position
+  map: venueMap, //specify the map
+  icon: "../images/moi.png" //path to image from HTML
 });
 
 }
 
 function loadScript() {
   var script = document.createElement('script');
-  script.src = 'http://maps.googleapis.com/maps/api/js?sensor=false&callback=init';
+  script.src = "http://maps.googleapis.com/maps/api/js?sensor=false&callback=init";
   document.body.appendChild(script);
 }
 
