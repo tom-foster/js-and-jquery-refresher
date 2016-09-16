@@ -3,7 +3,7 @@
 
 var venueMap;
 function init () {
-
+  //the pin location adds the marker when you later called the marker constructor
   var pinLocation = new google.maps.LatLng(52.292582,-1.5883776);
 
   var mapOptions = {
