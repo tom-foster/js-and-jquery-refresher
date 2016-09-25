@@ -1,5 +1,5 @@
 //static filtering of data
-//using the forEach javascript array method
+//using the forEach() javascript array method
 //tf 25/09/16
 
 jQuery(document).ready(function($) {
