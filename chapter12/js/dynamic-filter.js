@@ -20,6 +20,10 @@
     {
       name: 'Nigel',
       rate: 120
+    },
+    {
+      name: 'Tom',
+      rate: 145
     }
   ];
 
