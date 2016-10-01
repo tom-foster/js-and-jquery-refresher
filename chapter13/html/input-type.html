@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>chapter13/input-type</title>
+  <link rel="stylesheet" href="../css/chapter13.css"/>
+</head>
+<body>
+  <div class="container login">
+    <form action="/login/" name="login" method="post">
+      <div class="one-third column">
+        <img src="../images/logo.png" alt="logo" id="logo"/>
+      </div><!-- .one-third -->
+      <div class="two-thirds column" id="main">
+        <fieldset>
+          <legend>Login</legend>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username"/>
+          <label for="pwd">Password:</label>
+          <input type="password" name="pwd" id="pwd"><br/>
+          <input type="checkbox" name="" id="showPwd">
+          <label for="showPwd">show password</label>
+          <input type="submit" value="Login" />
+        </fieldset>
+      </div><!-- .two-thirds -->
+    </form>
+  </div><!-- .container -->
+  <script src="../js/utilities.js"></script>
+  <script src="../js/input-type.js"></script>
+</body>
+</html>
