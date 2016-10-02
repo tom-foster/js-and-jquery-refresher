@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>chapter13/textarea-counter</title>
+  <link rel="stylesheet" href="../css/chapter13.css">
+</head>
+<body>
+  <div class="container login">
+    <form action="/heard" name="howHeard" method="post" id="howHeard">
+      <div class="one-third column">
+        <img src="../images/logo.png" alt="logo" id="logo"/>
+      </div>
+      <div class="two-thirds column" id="main">
+        <fieldset>
+          <legend>Profile</legend>
+          <label for="bio">Short Bio (up to 140 characters)</label>
+          <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+          <span id="bio-count" class="hide"></span>
+        </fieldset>
+      </div><!-- .two-thirds -->
+    </form>
+  </div><!-- .container -->
+  <script src="../js/utilities.js"></script>
+  <script src="../js/textarea-counter.js"></script>
+</body>
+</html>
