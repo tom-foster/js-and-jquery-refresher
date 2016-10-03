@@ -74,6 +74,7 @@
     if (!isFormValid) { //if isFormValid is not true
       e.preventDefault(); //prevent the form from being submitted
     }
+
   }); //end of event handler anon function
   // END : anonymous function triggered by the submit button
 
@@ -180,7 +181,7 @@
 
     if(!errorContainer.length) { //if no errors exist with the element
       //create a <span> element to hold the error and add it after the element with the error
-      errorContainer = jQuery('span class="error message"></span>').insertAfter($el);
+      errorContainer = jQuery('<span class="error message"></span>').insertAfter($el);
     }
     errorContainer.text(getErrorMessage(el)); //add error message
   }
@@ -213,7 +214,7 @@
       return valid;
     },
     date: function(el) { //create date() method
-      var valid = /^(\d{2}\/\d{4})|(\d{4}-\d{2}-\d{2})$/.test(el.value);
+      var valid = /^(\d{2}\/\d{2}\/\d{4})|(\d{4}-\d{2}-\d{2})$/.test(el.value);
       if (!valid) { //if the value of valid is not true
         setErrorMessage(el, 'Please enter a valid date'); //set error message
       }
